@@ -14,4 +14,5 @@ jobs:
       - name: Llistat de fitxers del repositori
         run: |
           ls ${{ github.workspace }}
+          echo "Executat "`date` >> fitxer.txt
       - run: echo "Estat del job ${{ job.status }}."
