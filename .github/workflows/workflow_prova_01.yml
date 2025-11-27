@@ -1,0 +1,17 @@
+name: Prova GitHub Actions
+run-name: ${{ github.actor }} fa una prova
+on: [push]
+jobs:
+  Prova-Github-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "S’ha disparat per un esdeveniment ${{ github.event_name }}."
+      - run: echo "S’està executant en un servidor ${{ runner.os }}"
+      - run: echo "Estàs en la branca ${{ github.ref }} del repositori ${{ github.repository }}."
+      - name: Comprova el codi del repositori
+        uses: actions/checkout@v5
+      - run: echo "El repositori ${{ github.repository }} s’ha clonat al runner."
+      - name: Llistat de fitxers del repositori
+        run: |
+          ls ${{ github.workspace }}
+      - run: echo "Estat del job ${{ job.status }}."
