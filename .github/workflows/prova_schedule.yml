@@ -2,7 +2,7 @@ name: Prova GitHub Actions Schedule
 run-name: ${{ github.actor }} fa una prova schedule
 on:
   schedule:
-    - cron: '7/5 * * * *'
+    - cron: '0/5 * * * *'
 jobs:
   Prova-Github-Actions-Schedule:
     runs-on: ubuntu-latest
