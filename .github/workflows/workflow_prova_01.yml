@@ -16,7 +16,10 @@ jobs:
       - name: Llistat de fitxers del repositori
         run: |
           ls ${{ github.workspace }}
+      - name: Modificat fitxer.txt
+        run: |
           echo "Executat "`date` >> fitxer.txt
+          echo "Mostrar contingut de fitxer.txt:\n"
           cat fitxer.txt
       - run: echo "Estat del job ${{ job.status }}."
       - name: commit i push
