@@ -15,4 +15,5 @@ jobs:
         run: |
           ls ${{ github.workspace }}
           echo "Executat "`date` >> fitxer.txt
+          cat fitxer.txt
       - run: echo "Estat del job ${{ job.status }}."
