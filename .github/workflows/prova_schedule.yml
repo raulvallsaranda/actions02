@@ -2,10 +2,12 @@ name: Prova GitHub Actions Schedule
 run-name: ${{ github.actor }} fa una prova schedule
 on:
   schedule:
-    - cron: '43 * * * *'
+    - cron: '7/5 * * * *'
 jobs:
   Prova-Github-Actions-Schedule:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Comprova el codi del repositori
         uses: actions/checkout@v5
