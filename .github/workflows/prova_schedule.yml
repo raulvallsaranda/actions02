@@ -3,6 +3,8 @@ run-name: ${{ github.actor }} fa una prova schedule
 on:
   schedule:
     - cron: '0/5 * * * *'
+  workflow_dispatch:
+  
 jobs:
   Prova-Github-Actions-Schedule:
     runs-on: ubuntu-latest
