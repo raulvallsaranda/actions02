@@ -4,6 +4,8 @@ on: [push]
 jobs:
   Prova-Github-Actions:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - run: echo "S’ha disparat per un esdeveniment ${{ github.event_name }}."
       - run: echo "S’està executant en un servidor ${{ runner.os }}"
