@@ -2,14 +2,14 @@ name: Prova GitHub Actions Schedule
 run-name: ${{ github.actor }} fa una prova schedule
 on:
   schedule:
-    - cron: '0/5 * * * *'
+    - cron: '43 * * * *'
 jobs:
   Prova-Github-Actions-Schedule:
     runs-on: ubuntu-latest
     steps:
       - name: Comprova el codi del repositori
         uses: actions/checkout@v5
-      - name: Llistat de fitxers del repositori
+      - name: Modificar fitxer.txt
         run: |
           echo "Programat "`date` >> fitxer.txt
       - name: commit i push
