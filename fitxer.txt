@@ -1,3 +1,4 @@
 Iniciem de nou el fitxer.
+Nova modificació en local.
 Executat Thu Nov 27 10:45:54 UTC 2025
 Executat Thu Nov 27 10:47:20 UTC 2025
